@@ -6,12 +6,12 @@ namespace Factory.Models
     {
         public Engineer() 
         {
-            this.Machines = new HashSet<Machine>();
+            this.JoinEntities = new HashSet<EngineerMachine>();
         }
 
         public int EngineerId { get; set; }
         public string Name { get; set; } 
         public string Description { get; set; } 
-        public virtual ICollection<Machine> Machines { get; set; }
+        public virtual ICollection<EngineerMachine> JoinEntities { get; set; }
     }
 }
