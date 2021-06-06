@@ -1,4 +1,4 @@
-@* 
+
 @{
   Layout = "_Layout";
 }
@@ -16,9 +16,9 @@
 <ul>
   @foreach (Machine machine in Model)
   {
-      <li>@Html.ActionLink($"{machine.Name}", "Details", new { id = machine.MachineId }) | @machine.Engineer.Name</li>
+      <li>@Html.ActionLink($"{machine.Name}", "Details", new { id = machine.MachineId })</li>
   }
 </ul>
 
 <p>@Html.ActionLink("Add new machine", "Create")</p>
-<p>@Html.ActionLink("Home", "Index", "Home")</p> *@
+<p>@Html.ActionLink("Home", "Index", "Home")</p>
