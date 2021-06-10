@@ -7,7 +7,7 @@
 #### By _**Garrett Brown**_
 
 ## Description
-_A program that allows Dr. Sillystringz's Factory to keep track of Engineers and Machines. Users can create Engineers, Machines, and assorted details. Users can also keep track of which Machines are assigned to which Engineers. Users can also edit or delete details._
+_A program that allows Dr. Sillystringz's Factory to keep track of Engineers and Machines. Users can create Engineers, Machines, and assorted details. Users can also keep track of which Machines are assigned to which Engineers, and vice versa. Users can also edit or delete details for Engineers, or Machines._
 
 ### User Stories
 
@@ -20,7 +20,6 @@ As the factory manager, I need to be able to select a engineer, see their detail
 As the factory manager, I need to add new engineers to our system when they are hired. I also need to add new machines to our system when they are installed.
 As the factory manager, I should be able to add new machines even if no engineers are employed. I should also be able to add new engineers even if no machines are installed
 As the factory manager, I need to be able to add or remove machines that a specific engineer is licensed to repair. I also need to be able to modify this relationship from the other side, and add or remove engineers from a specific machine.
-I should be able to navigate to a splash page that lists all engineers and machines. Users should be able to click on an individual engineer or machine to see all the engineers/machines that belong to it.
 
 </details>
 
@@ -66,10 +65,16 @@ Table of Contents
 ```
 
 4. Replace `YOUR-PASSWORD` with password you selected when installing MySQLWorkbench.
-5. Replace `YOUR-DATABASE` with `garrett_brown`.
+5. Replace `YOUR-DATABASE` with the name of your database.
+
+#### Database Update
+
+1. In the root directory, run `dotnet ef databse restore`
+2. In the root directory, run `dotnet ef databse update`
+
 
 ### Startup
-* Navigate to Factory.Solution folder in project.
+* Navigate to root directory in project.
 * Restore project with git command `dotnet restore`
 * Build project with git command `dotnet build`
 * To run program, run git command `dotnet run`
