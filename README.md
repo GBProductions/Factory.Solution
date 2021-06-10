@@ -66,6 +66,10 @@ Table of Contents
 
 4. Replace `YOUR-PASSWORD` with password you selected when installing MySQLWorkbench.
 5. Replace `YOUR-DATABASE` with the name of your database.
+6. In the root directory, run `dotnet ef databse update` 
+7. In the root directory, run `dotnet ef databse restore`
+
+This will recreate the database on your computer, using MySQLWorkbench. You can proceed to Startup.
 
 
 
@@ -73,8 +77,6 @@ Table of Contents
 * Navigate to root directory in project.
 * Restore project with git command `dotnet restore`
 * Build project with git command `dotnet build`
-* In the root directory, run `dotnet ef databse restore`
-* In the root directory, run `dotnet ef databse update`
 * To run program, run git command `dotnet run`
 * In browser, navigate to http://localhost:5000 
 
